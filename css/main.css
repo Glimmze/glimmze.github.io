@@ -47,5 +47,5 @@ div#text-main{
     text-align: justify;
     width: 1210px;
     font-size: 16px;
-    border: 2px solid #0078a8;
+    border: 2px solid #0078a8;   /*边框效果*/
 }

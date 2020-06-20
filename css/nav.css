@@ -1,5 +1,5 @@
 
-nav{
+nav{                /*导航栏*/
     position: fixed;
     margin: 0 auto 0;
     width: 97%;
@@ -8,10 +8,10 @@ nav{
     border-radius: 8px;
     font-size: 0;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .3);
-    z-index: 999;
+    z-index: 999;       /*导航栏的堆叠顺序*/
 }
 
-nav a{
+nav a{                  /*导航超链接效果*/
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -22,7 +22,7 @@ nav a{
     display: inline-block;
     text-align: center;
 }
-nav .animation{
+nav .animation{            /*导航最上面一层随鼠标移动的动画效果*/
     position: absolute;
     height: 100%;
     top: 0;
@@ -30,12 +30,12 @@ nav .animation{
     background: #df8b45;
     width: 70px;
     border-radius: 8px;
-    transition: all .5s ease 0s;
+    transition: all .5s ease 0s;  /*过渡效果*/
 }
-a:nth-child(1){
+a:nth-child(1){            /*子属性1*/
     width: 70px;
 }
-nav .start-home,a:nth-child(1):hover~.animation{
+nav .start-home,a:nth-child(1):hover~.animation{    /*子属性动画显示的宽度规定，左侧预留距离规定*/
     width: 70px;
     left: 0;
 }

@@ -17,7 +17,7 @@ body{
     width: 100vw;
     height: 100vh;
     perspective: 100px;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; /*表示所有子元素在3D空间中呈现*/
     overflow-y: auto;
 }
 
@@ -47,8 +47,8 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    transform: translateZ(-50px) scale(2.4);
+    z-index: -1;                            /*堆叠顺序-1,意思是在文本之下*/
+    transform: translateZ(-50px) scale(2.4);       /*图片z轴向下移动50像素，放大2.4倍*/
 }
 
 .item-images::before{
@@ -57,8 +57,8 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.4);  /*阴影是在图片上面的，所以阴影透明度改变，图片也会有变化*/
+    transition: all 0.3s ease;        /*动画效果*/
 }
 
 .item-images img{
